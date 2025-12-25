@@ -51,7 +51,7 @@ class _GroceryListState extends State<GroceryList> {
         index: _currentTab.index,
         children: [
           GrocerySearch(),
-          GroceryList()
+          content,
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
@@ -63,10 +63,6 @@ class _GroceryListState extends State<GroceryList> {
           });
         },
         items: const [
-          BottomNavigationBarItem(
-            icon: Icon(Icons.dynamic_feed),
-            label: 'Feed',
-          ),
           BottomNavigationBarItem(icon: Icon(Icons.local_grocery_store), label: 'Display'),
           BottomNavigationBarItem(icon: Icon(Icons.search), label: 'Search'),
         ],
